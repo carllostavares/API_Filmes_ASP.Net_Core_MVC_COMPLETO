@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes ASP.NetMVC\\FilmesAPI\\FilmesAPI.csproj": {}
+    "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes-ASP.NetMVC-Core-COMPLETO\\FilmesAPI\\FilmesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes ASP.NetMVC\\FilmesAPI\\FilmesAPI.csproj": {
+    "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes-ASP.NetMVC-Core-COMPLETO\\FilmesAPI\\FilmesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes ASP.NetMVC\\FilmesAPI\\FilmesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes-ASP.NetMVC-Core-COMPLETO\\FilmesAPI\\FilmesAPI.csproj",
         "projectName": "FilmesAPI",
-        "projectPath": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes ASP.NetMVC\\FilmesAPI\\FilmesAPI.csproj",
+        "projectPath": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes-ASP.NetMVC-Core-COMPLETO\\FilmesAPI\\FilmesAPI.csproj",
         "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes ASP.NetMVC\\FilmesAPI\\obj\\",
+        "outputPath": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\Atividade\\API-Filmes-ASP.NetMVC-Core-COMPLETO\\FilmesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
