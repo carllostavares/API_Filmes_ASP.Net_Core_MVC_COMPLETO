@@ -12,4 +12,6 @@ public class Endereco
     public string Logradouro { get; set; }
 
     public int Numero { get; set; }
+
+    public virtual Cinema Cinema { get; set; }
 }
