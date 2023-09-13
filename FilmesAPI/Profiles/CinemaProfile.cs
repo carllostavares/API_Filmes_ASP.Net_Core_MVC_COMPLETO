@@ -10,6 +10,6 @@ public class CinemaProfile: Profile
     {
         CreateMap<CreateCinemaDto, Cinema>();
         CreateMap<UpdateCinemaDto, Cinema>();
-        CreateMap<Filme, ReadCinemaDto>();
+        CreateMap<Cinema, ReadCinemaDto>();
     }
 }

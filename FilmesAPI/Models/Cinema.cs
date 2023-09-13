@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace FilmesAPI.Models;
 
@@ -11,7 +12,7 @@ public class Cinema
     [Required(ErrorMessage ="O campo é obrigatório!")]
     public string Nome { get; set; }
 
-    public int EnderecoID { get; set; }
+    public int EnderecoId { get; set; }
 
     public virtual Endereco Endereco { get; set; } 
 
