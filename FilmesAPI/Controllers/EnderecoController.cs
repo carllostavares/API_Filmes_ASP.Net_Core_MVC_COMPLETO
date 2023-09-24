@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using FilmesAPI.Data.Dtos;
 using FilmesAPI.Data;
 using FilmesAPI.Models;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace FilmesApi.Controllers
 {
@@ -56,6 +57,28 @@ namespace FilmesApi.Controllers
                 return NotFound();
             }
             _mapper.Map(enderecoDto, endereco);
+            _context.SaveChanges();
+            return NoContent();
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult AtualizaEnderecoParcial(int id,
+            JsonPatchDocument<UpdateEnderecoDto> patch)
+
+        {
+            var endereco = _context.Enderecos.FirstOrDefault(filme => filme.Id == id);
+            if (endereco == null) return NotFound();
+
+            var enderecoParaAtualizar = _mapper.Map<UpdateEnderecoDto>(endereco);
+
+            patch.ApplyTo(enderecoParaAtualizar, ModelState);
+
+            if (!TryValidateModel(enderecoParaAtualizar))
+            {
+                return ValidationProblem(ModelState);
+            }
+
+            _mapper.Map(enderecoParaAtualizar, endereco);
             _context.SaveChanges();
             return NoContent();
         }
