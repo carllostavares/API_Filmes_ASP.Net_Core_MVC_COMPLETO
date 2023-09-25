@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-
+ 
 
 namespace FilmesAPI.Models;
 
@@ -22,5 +22,7 @@ public class Filme
     [Required(ErrorMessage = "É obrigatório informar a Duração !")]
     [Range(70,600, ErrorMessage = "O tamanho do Genero não pode exceder 50 caracteres !")]
     public int Duracao { get; set; }
+
+    public virtual ICollection<Sessao> Sessaos { get; set; }
 
 }
